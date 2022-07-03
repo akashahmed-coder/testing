@@ -1,0 +1,37 @@
+
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 10px;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.cart-icon{
+    position: relative;
+    margin-right: 10px;
+    
+}
+.cart-icon span{
+    position: absolute;
+    background-color: orange;
+    color: white;
+    padding: 5px 7px;
+    font-size: 10px;
+    border-radius: 20px;
+    top: -10px;
+    right: -10px;
+}
