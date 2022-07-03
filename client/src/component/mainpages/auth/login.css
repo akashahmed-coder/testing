@@ -1,0 +1,38 @@
+.login-page{
+    max-width: 500px;
+    border: 2px solid rgb(3, 165, 206);
+    margin: 50px auto;
+    padding: 30px;
+}
+.login-page h2{
+ text-transform: uppercase;
+ color: #555;
+ letter-spacing: 2px;
+}
+.login-page form input,
+.login-page form button{
+    width: 100%;
+    margin: 10px 0;
+    height: 40px;
+    padding: 0 5px;
+    border: 1px solid rgb(3, 165, 206);
+    outline: rgb(3, 165, 206);
+
+}
+.login-page form .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-page form button{
+    width: 150px;
+    background: rgb(3, 165, 206);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.login-page form a{
+    color: orange;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
