@@ -35,7 +35,7 @@ const selectChange = (e) => {
       <input type='text' placeholder='Search Products' value={search} onChange={e=> setSearch(e.target.value)} />
 
       <div className='row'>
-        <span>Filters: </span>
+        <span>Short By: </span>
         <select name='sort' value={sort} onChange={e=> setSort(e.target.value)}>
              <option Value=''>Newest</option>
              <option Value='sort=oldest'>Oldest</option>
