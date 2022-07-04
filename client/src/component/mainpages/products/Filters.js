@@ -32,7 +32,7 @@ const selectChange = (e) => {
         </select>
       </div>
 
-      <input type='text' placeholder='Search Products' value={search} onChange={e=> setSearch(e.target.value)} />
+      <input type='text' placeholder='Search Products' value={search} onChange={e=> setSearch(e.target.value.toLowerCase())} />
 
       <div className='row sort'>
         <span>Short By: </span>
