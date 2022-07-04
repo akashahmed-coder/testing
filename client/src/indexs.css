@@ -14,7 +14,6 @@
     monospace;
   }
   .App{
-    position: absolute;
       max-width: 1230px;
       min-height: 100vh;
       margin: 0 auto;
@@ -86,6 +85,9 @@
   @media (max-width:593px){
     .filter_menu .row span{
       display: none;
+    }
+    .history-page{
+      overflow-x: scroll;
     }
   }
   @media (max-width:500px){
