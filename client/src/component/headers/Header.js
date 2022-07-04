@@ -50,7 +50,7 @@ const styleMenu = {
 
 <div className='logo'>
  <Link to="/">
-   <h1>{isAdmin? 'Admin': 'DevAt Shop'}</h1>
+   <h1>{isAdmin? 'Admin': 'E-Shop First'}</h1>
  </Link>
 </div>
 
