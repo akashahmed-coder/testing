@@ -14,7 +14,7 @@
     monospace;
   }
   .App{
-    position: relative;
+    position: absolute;
       max-width: 1230px;
       min-height: 100vh;
       margin: 0 auto;
@@ -41,7 +41,7 @@
   @import url('./component/mainpages/history/histrory.css');
   @import url('./component/mainpages/categoris/categori.css');
   @import url('./component/mainpages/createProduct/createProduct.css');
-  
+
   /* --------responsive---------- */
 
   @media (max-width: 830px){
