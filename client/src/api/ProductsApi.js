@@ -1,9 +1,10 @@
-import {useState,useEffect} from 'react';
+import React,{useState,useEffect} from 'react';
 import axios from 'axios'
 
 
 function ProductsApi() {
   const [products,setProducts] = useState([])
+  const [allProducts, setAllProducts] = useState([])
   const [callback,setCallback] = useState(false)
   const [category,setCategory] = useState('')
   const [sort,setSort] = useState('')
@@ -26,9 +27,23 @@ useEffect(()=>{
   }
   getProducts()
 },[callback,category,sort,search,page,result])
-console.log(products)
+
+useEffect(()=>{
+  const getAllProducts = async () =>{
+    try {
+      const res = await axios.get("/api/allproduct")
+      setAllProducts(res.data.product)
+      
+    } catch (err) {
+      alert(err.response.data.msg)
+    }
+  }
+  getAllProducts()
+},[])
+console.log(allProducts)
   return {
     products:[products,setProducts],
+    allProducts:[allProducts,setAllProducts],
     callback:[callback,setCallback],
     category:[category,setCategory],
     sort:[sort,setSort],

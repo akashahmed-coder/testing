@@ -79,14 +79,14 @@ const deleteAll = () => {
         )     
       }) 
     }
-  <LoadMore/>
+  
  </div>
    <div className='productPageLoader'>
    {
      products.length === 0 && <Loading/>
   }
    </div>
-   
+   <LoadMore/>
  </>
   )
  
