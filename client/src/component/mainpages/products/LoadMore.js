@@ -9,7 +9,7 @@ export default function LoadMore() {
     <div className='laod_more'>
         {
             result<page*9?''
-            :<button onClick={()=>setPage(page+1)}>Load More</button>
+            :<button className='loadmoreButton' onClick={()=>setPage(page+1)}>Load More</button>
         }
     </div>
   )
