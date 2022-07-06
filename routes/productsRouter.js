@@ -9,6 +9,7 @@ router.route("/product")
 router.route("/product/:id")
 .put(auth,authAdmin,productsCtrl.updateProduct)
 .delete(auth,authAdmin,productsCtrl.deleteProduct)
+router.get("/allproduct",productsCtrl.getAllProducts)
 
 
 module.exports = router

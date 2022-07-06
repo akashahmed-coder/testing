@@ -52,6 +52,14 @@ const productsCtrl = {
          res.status(400).json(err.msg)
      }
     },
+    getAllProducts: async(req,res)=>{
+      try {
+         const product = await Products.find()
+         res.json({product})
+      } catch (err) {
+         res.status(500).json({msg:err.message})
+      }
+ },
     createProduct:async(req,res)=>{
      try {
         const {product_id,title,price,description,content,images,category} = req.body
