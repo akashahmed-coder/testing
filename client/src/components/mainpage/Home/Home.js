@@ -1,23 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Navber from '../navber/Navber'
 import secONeImg from '../../../img/img-3.jpg'
-import axios from 'axios'
+import TrendingFurniture from '../../trendingFurniture/TrendingFurniture'
+import OurProducts from '../../ourProduct/OurProducts'
 
 export default function Home() {
-  const [categories,setCategories] = useState([])
- useEffect(()=>{
-    const getCategory = async() => {
-        try{
-           const res = await axios.get("/api/category")
-           setCategories(res.data)
-           console.log(res)
-           console.log(categories)
-        }catch(err){
-          console.log(err.response.data.msg)
-        }
-    }
-    getCategory()
- },[])
+ 
   return (
     <div>
         <div className='homeHeader'> 
@@ -55,17 +43,8 @@ export default function Home() {
               
            </div>
        </div>
-           <div className='category'>
-                  {
-                    categories.map(category=>{
-                      return(
-                        <div>
-                            <h1>{category.name}</h1>
-                        </div>
-                      )
-                    })
-                  }
-           </div>
+       <TrendingFurniture/>
+       <OurProducts/>
     </div>
   )
 }

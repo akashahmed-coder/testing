@@ -1,0 +1,46 @@
+.ourProducts{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.ourProductsWrapper{
+    width: 80%;
+    padding: 100px;
+}
+.ourProductsTag{
+    color: orange;
+    font-size: 20px;
+}
+.ourProductsTitleAndButton{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.ourProductsTitle{
+    font-size: 1.8rem;
+}
+.ourPorductsButton{
+    border: none;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.ourProductsBottom{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+.ourProductsCard{
+    padding: 10px;
+    box-shadow: -9px 11px 17px -12px rgba(0,0,0,0.75);
+-webkit-box-shadow: -9px 11px 17px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: -9px 11px 17px -12px rgba(0,0,0,0.75);
+}
+.ourProductsCardImg{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
