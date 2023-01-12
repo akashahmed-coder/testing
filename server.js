@@ -46,15 +46,22 @@ mongoose.connect(URI,{
 const PORT = process.env.PORT || 5000
 
 
-if(process.env.NODE_ENV === 'production'){
-    app.use(express.static('client/build'))
-    app.get("*",(req,res)=>{
+
+ app.use(express.static('client/build'))
+ app.get("*",(req,res)=>{
         res.sendFile(path.join(__dirname,'client','build','index.html'))
-    })
-}
+ })
+
 
 
 app.listen(PORT,()=>{
     console.log(`server runnig successfull at ${PORT}`)
 })
 
+
+
+
+// "build":"cd client && npm run build",
+// "install-client":"cd client && npm install",
+// "heroku-postbuild": "npm run install-client && npm run build",
+// "client":"cd client && npm start" 

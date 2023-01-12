@@ -4,11 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build":"cd client && npm run build",
-    "install-client":"cd client && npm install",
-    "heroku-postbuild": "npm run install-client && npm run build",
-    "start": "node server.js",
-    "client":"cd client && npm start" 
+    "start": "node server.js"
   },
   "engines": {
     "node": "16.13.1"
